@@ -1,0 +1,8 @@
+   public void PrintTree()
+    {
+        Console.WriteLine("\nGit Repository:");
+        foreach (var branch in branches)
+        {
+            Console.WriteLine($"  {branch.Key}: {string.Join(", ", branch.Value)}");
+        }
+    }
